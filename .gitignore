@@ -26,6 +26,9 @@ hs_err_pid*
 bin/
 target/
 build/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
 # Maven specific files
 pom.xml.tag
@@ -36,10 +39,18 @@ release.properties
 
 # Gradle specific files
 .gradle
-build/
 
 # Ignore the gradle wrapper jar file
 !gradle-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
 # Eclipse specific files
 .project
@@ -60,6 +71,8 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
 # VS Code specific files
 .vscode/
@@ -69,9 +82,12 @@ nbdist/
 
 # Windows specific files
 Thumbs.db
+
+### My SQL Host Data ###
 mysql-order/
 mysql-inventory/
 mysql_keycloak_data/
 mongo-data/
 postgres-inventory/
 postgres-order/
+/grafana/
